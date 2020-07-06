@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../simECBEncoder.srcs/sources_1/new/ECBEncoder.vhd" \
+"../../../../simECBEncoder.srcs/sources_1/new/ECB_tb2.vhd" \
+
+# Do not sort compile order
+nosort

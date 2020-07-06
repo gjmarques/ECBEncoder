@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Mar 26 10:20:52 2020
--- Host        : ASRO-NUC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top mb_design_mdm_1_0 -prefix
---               mb_design_mdm_1_0_ mb_design_mdm_1_0_sim_netlist.vhdl
+-- Date        : Tue Jun  9 17:34:25 2020
+-- Host        : DESKTOP-SKUGM7Q running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               C:/CR/ECBEncoder/project_1/project_1.srcs/sources_1/bd/mb_design/ip/mb_design_mdm_1_0/mb_design_mdm_1_0_sim_netlist.vhdl
 -- Design      : mb_design_mdm_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -42,6 +42,8 @@ entity mb_design_mdm_1_0_MB_BSCANE2 is
     Dbg_TDO_0 : in STD_LOGIC;
     \Use_Serial_Unified_Completion.completion_status_reg[15]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MB_BSCANE2 : entity is "MB_BSCANE2";
 end mb_design_mdm_1_0_MB_BSCANE2;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MB_BSCANE2 is
@@ -170,6 +172,8 @@ entity mb_design_mdm_1_0_MB_BUFG is
     Dbg_Clk_0 : out STD_LOGIC;
     DRCK : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MB_BUFG : entity is "MB_BUFG";
 end mb_design_mdm_1_0_MB_BUFG;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MB_BUFG is
@@ -240,6 +244,8 @@ entity mb_design_mdm_1_0_MB_FDC_1 is
     Debug_SYS_Rst : in STD_LOGIC;
     Ext_NM_BRK : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MB_FDC_1 : entity is "MB_FDC_1";
 end mb_design_mdm_1_0_MB_FDC_1;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MB_FDC_1 is
@@ -854,6 +860,8 @@ entity mb_design_mdm_1_0_MB_FDRE_1 is
     Dbg_Shift_0_3 : in STD_LOGIC;
     Dbg_Shift_0_4 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MB_FDRE_1 : entity is "MB_FDRE_1";
 end mb_design_mdm_1_0_MB_FDRE_1;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MB_FDRE_1 is
@@ -899,6 +907,8 @@ entity mb_design_mdm_1_0_MB_LUT1 is
     Ext_JTAG_TDI : out STD_LOGIC;
     I0 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MB_LUT1 : entity is "MB_LUT1";
 end mb_design_mdm_1_0_MB_LUT1;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MB_LUT1 is
@@ -938,6 +948,8 @@ entity mb_design_mdm_1_0_MB_SRL16E is
     \Use_E2.BSCANE2_I_i_4_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     config_TDO_2 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MB_SRL16E : entity is "MB_SRL16E";
 end mb_design_mdm_1_0_MB_SRL16E;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MB_SRL16E is
@@ -1177,6 +1189,8 @@ entity mb_design_mdm_1_0_JTAG_CONTROL is
     \Use_Serial_Unified_Completion.count_reg[5]_2\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \shift_Count_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_JTAG_CONTROL : entity is "JTAG_CONTROL";
 end mb_design_mdm_1_0_JTAG_CONTROL;
 
 architecture STRUCTURE of mb_design_mdm_1_0_JTAG_CONTROL is
@@ -2710,6 +2724,8 @@ entity mb_design_mdm_1_0_MDM_Core is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \Use_Serial_Unified_Completion.count_reg[5]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MDM_Core : entity is "MDM_Core";
 end mb_design_mdm_1_0_MDM_Core;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MDM_Core is
@@ -4884,6 +4900,8 @@ entity mb_design_mdm_1_0_MDM is
   attribute C_USE_CROSS_TRIGGER of mb_design_mdm_1_0_MDM : entity is 0;
   attribute C_USE_UART : integer;
   attribute C_USE_UART of mb_design_mdm_1_0_MDM : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_mdm_1_0_MDM : entity is "MDM";
 end mb_design_mdm_1_0_MDM;
 
 architecture STRUCTURE of mb_design_mdm_1_0_MDM is
