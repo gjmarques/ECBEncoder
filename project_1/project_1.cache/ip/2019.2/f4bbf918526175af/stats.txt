@@ -1,2 +1,0 @@
-NumberHits:1
-Timestamp: Tue Jun 09 22:14:47 UTC 2020

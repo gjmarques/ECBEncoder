@@ -48,6 +48,7 @@ begin
 s_block0 <= texto(31 downto 16);
 s_block1 <= texto(15 downto 0);
 
+
 s_ciphered_text <= (s_block0 xor key) & (s_block1 xor key);
 
 ciphered_text <= s_ciphered_text;

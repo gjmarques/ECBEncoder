@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.srcs/sources_1/new/ECBEncoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ECBEncoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.srcs/sources_1/new/ECB_tb2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ECB_tb2'
