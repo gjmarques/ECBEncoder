@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed Jul  8 23:12:28 2020
+-- Date        : Fri Jul 10 22:21:47 2020
 -- Host        : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               d:/Files/ECBEncoder/ECBEncoder/stream/stream.srcs/sources_1/bd/mb_design/ip/mb_design_CustomECBEncoder_0_0/mb_design_CustomECBEncoder_0_0_stub.vhdl
+--               D:/Files/ECBEncoder/ECBEncoder/stream/stream.srcs/sources_1/bd/mb_design/ip/mb_design_CustomECBEncoder_0_0/mb_design_CustomECBEncoder_0_0_stub.vhdl
 -- Design      : mb_design_CustomECBEncoder_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

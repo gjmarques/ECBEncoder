@@ -1,6 +1,132 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jul 10 22:20:37 2020
+| Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_CustomECBEncoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_CustomECBEncoder_0_0 (xilinx.com:user:CustomECBEncoder:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jul 10 22:11:17 2020
+| Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_CustomECBEncoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mb_design_CustomECBEncoder_0_0 (xilinx.com:user:CustomECBEncoder:1.0 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jul 10 22:09:53 2020
+| Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_CustomECBEncoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_CustomECBEncoder_0_0 (xilinx.com:user:CustomECBEncoder:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jul 10 22:00:25 2020
+| Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_CustomECBEncoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mb_design_CustomECBEncoder_0_0 (xilinx.com:user:CustomECBEncoder:1.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri Jul 10 19:04:04 2020
+| Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_CustomECBEncoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_CustomECBEncoder_0_0 (xilinx.com:user:CustomECBEncoder:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Jul  9 17:45:44 2020
+| Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_design_CustomECBEncoder_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_design_CustomECBEncoder_0_0 (xilinx.com:user:CustomECBEncoder:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 | Date         : Wed Jul  8 23:09:36 2020
 | Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

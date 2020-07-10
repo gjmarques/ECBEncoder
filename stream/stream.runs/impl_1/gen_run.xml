@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1594248782">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1594416071">
   <File Type="BITSTR-BMM" Name="mb_design_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="mb_design_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="mb_design_wrapper_timing_summary_init.rpt"/>
@@ -123,9 +123,9 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_CustomECBEncoder_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_design_CustomECBEncoder_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_design_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_xbar_0"/>
 </GenRun>

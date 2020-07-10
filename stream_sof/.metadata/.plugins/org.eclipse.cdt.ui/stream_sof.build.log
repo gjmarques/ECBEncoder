@@ -1,0 +1,21 @@
+21:56:59 **** Incremental Build of configuration Debug for project stream_sof ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Files/ECBEncoder/ECBEncoder/stream_sof/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: stream_sof.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Files/ECBEncoder/ECBEncoder/stream_sof/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "stream_sof.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: stream_sof.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size stream_sof.elf  |tee "stream_sof.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16820	   1752	  24676	  43248	   a8f0	stream_sof.elf
+'Finished building: stream_sof.elf.size'
+' '
+
+21:57:00 Build Finished (took 777ms)
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="stream_sof_system" key="programflash.hwplatform"/>
+	<item value="Local" key="stream_sof_system-target"/>
+	<item value="Auto Detect" key="stream_sof_system-device"/>
+	<item value="" key="stream_sof_system-imgFile"/>
+	<item value="" key="stream_sof_system-fsblFile"/>
+	<item value="28f00am29ew-bpi-x16" key="stream_sof_system-flashType"/>
+	<item value="" key="stream_sof_system-offSet"/>
+	<item value="false" key="stream_sof_system-verifyFlash"/>
+	<item value="false" key="stream_sof_system-blankCheck"/>
+</section>

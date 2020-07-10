@@ -1,3 +1,11 @@
 timestamp=[2020-07-08 23:19:22], mode=WORKBENCH_START, duration=0:00:06.222, duration_ms=6222, data={}
 timestamp=[2020-07-08 23:19:23], mode=WORKBENCH_UI_INIT, duration=0:00:00.496, duration_ms=496, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
 timestamp=[2020-07-08 23:21:06], mode=APP_CREATION, duration=0:00:08.911, duration_ms=8911, data={name=stream_sof, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_design_wrapper, application_type=application}
+timestamp=[2020-07-09 15:43:29], mode=WORKBENCH_START, duration=0:00:09.316, duration_ms=9316, data={}
+timestamp=[2020-07-09 15:43:31], mode=WORKBENCH_UI_INIT, duration=0:00:01.264, duration_ms=1264, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_design_wrapper,stream_sof,stream_sof_system}
+timestamp=[2020-07-10 16:47:35], mode=WORKBENCH_START, duration=0:00:09.753, duration_ms=9753, data={}
+timestamp=[2020-07-10 16:47:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.923, duration_ms=923, data={editors_count=4, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_design_wrapper,stream_sof,stream_sof_system}
+timestamp=[2020-07-10 16:58:34], mode=PLATFORM_GENERATION, duration=0:00:16.235, duration_ms=16235, data={name=mb_design_wrapper}
+timestamp=[2020-07-10 19:09:14], mode=PLATFORM_GENERATION, duration=0:00:01.825, duration_ms=1825, data={name=mb_design_wrapper}
+timestamp=[2020-07-10 22:05:08], mode=PLATFORM_GENERATION, duration=0:00:01.981, duration_ms=1981, data={name=mb_design_wrapper}
+timestamp=[2020-07-10 22:27:15], mode=PLATFORM_GENERATION, duration=0:00:01.929, duration_ms=1929, data={name=mb_design_wrapper}

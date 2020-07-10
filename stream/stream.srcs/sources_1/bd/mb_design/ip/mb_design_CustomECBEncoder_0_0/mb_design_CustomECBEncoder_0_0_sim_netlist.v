@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Jul  8 23:12:28 2020
+// Date        : Fri Jul 10 22:21:47 2020
 // Host        : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/Files/ECBEncoder/ECBEncoder/stream/stream.srcs/sources_1/bd/mb_design/ip/mb_design_CustomECBEncoder_0_0/mb_design_CustomECBEncoder_0_0_sim_netlist.v
+//               D:/Files/ECBEncoder/ECBEncoder/stream/stream.srcs/sources_1/bd/mb_design/ip/mb_design_CustomECBEncoder_0_0/mb_design_CustomECBEncoder_0_0_sim_netlist.v
 // Design      : mb_design_CustomECBEncoder_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -141,14 +141,25 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
   wire [31:0]s00_axis_tdata;
   wire s00_axis_tready;
   wire s00_axis_tvalid;
-  wire [27:2]s_cypher;
+  wire [15:0]s_ciphered_text00_out;
+  wire [14:2]s_cypher;
+  wire \s_dataOut[0]_i_1_n_0 ;
+  wire \s_dataOut[11]_i_1_n_0 ;
+  wire \s_dataOut[13]_i_1_n_0 ;
+  wire \s_dataOut[15]_i_1_n_0 ;
+  wire \s_dataOut[1]_i_1_n_0 ;
+  wire \s_dataOut[3]_i_1_n_0 ;
+  wire \s_dataOut[5]_i_1_n_0 ;
+  wire \s_dataOut[7]_i_1_n_0 ;
+  wire \s_dataOut[8]_i_1_n_0 ;
+  wire \s_dataOut[9]_i_1_n_0 ;
   wire s_validOut;
   wire s_validOut_i_1_n_0;
   wire s_validOut_reg_0;
 
   mb_design_CustomECBEncoder_0_0_ECBEncoder ecbencoder_inst
-       (.s00_axis_tdata({s00_axis_tdata[27],s00_axis_tdata[25],s00_axis_tdata[21:18],s00_axis_tdata[11],s00_axis_tdata[9],s00_axis_tdata[5:2]}),
-        .s_ciphered_text({s_cypher[27],s_cypher[25],s_cypher[21:18],s_cypher[11],s_cypher[9],s_cypher[5:2]}));
+       (.ciphered_text({s_ciphered_text00_out[15],s_ciphered_text00_out[13],s_ciphered_text00_out[11],s_ciphered_text00_out[9:7],s_ciphered_text00_out[5],s_ciphered_text00_out[3],s_ciphered_text00_out[1:0],s_cypher[14],s_cypher[12],s_cypher[10],s_cypher[6],s_cypher[4],s_cypher[2]}),
+        .s00_axis_tdata({s00_axis_tdata[31:16],s00_axis_tdata[14],s00_axis_tdata[12],s00_axis_tdata[10],s00_axis_tdata[6],s00_axis_tdata[4],s00_axis_tdata[2]}));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT2 #(
     .INIT(4'hB)) 
@@ -156,6 +167,36 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
        (.I0(m00_axis_tready),
         .I1(s_validOut_reg_0),
         .O(s00_axis_tready));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[0]_i_1 
+       (.I0(s00_axis_tdata[0]),
+        .I1(s00_axis_tdata[16]),
+        .O(\s_dataOut[0]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[11]_i_1 
+       (.I0(s00_axis_tdata[11]),
+        .I1(s00_axis_tdata[27]),
+        .O(\s_dataOut[11]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[13]_i_1 
+       (.I0(s00_axis_tdata[13]),
+        .I1(s00_axis_tdata[29]),
+        .O(\s_dataOut[13]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[15]_i_1 
+       (.I0(s00_axis_tdata[15]),
+        .I1(s00_axis_tdata[31]),
+        .O(\s_dataOut[15]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[1]_i_1 
+       (.I0(s00_axis_tdata[1]),
+        .I1(s00_axis_tdata[17]),
+        .O(\s_dataOut[1]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
     \s_dataOut[31]_i_1 
@@ -168,88 +209,118 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
         .I1(s_validOut_reg_0),
         .I2(m00_axis_tready),
         .O(s_validOut));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[3]_i_1 
+       (.I0(s00_axis_tdata[3]),
+        .I1(s00_axis_tdata[19]),
+        .O(\s_dataOut[3]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[5]_i_1 
+       (.I0(s00_axis_tdata[5]),
+        .I1(s00_axis_tdata[21]),
+        .O(\s_dataOut[5]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[7]_i_1 
+       (.I0(s00_axis_tdata[7]),
+        .I1(s00_axis_tdata[23]),
+        .O(\s_dataOut[7]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[8]_i_1 
+       (.I0(s00_axis_tdata[8]),
+        .I1(s00_axis_tdata[24]),
+        .O(\s_dataOut[8]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \s_dataOut[9]_i_1 
+       (.I0(s00_axis_tdata[9]),
+        .I1(s00_axis_tdata[25]),
+        .O(\s_dataOut[9]_i_1_n_0 ));
   FDRE \s_dataOut_reg[0] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[0]),
+        .D(\s_dataOut[0]_i_1_n_0 ),
         .Q(m00_axis_tdata[0]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[10] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[10]),
+        .D(s_cypher[10]),
         .Q(m00_axis_tdata[10]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[11] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[11]),
+        .D(\s_dataOut[11]_i_1_n_0 ),
         .Q(m00_axis_tdata[11]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[12] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[12]),
+        .D(s_cypher[12]),
         .Q(m00_axis_tdata[12]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[13] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[13]),
+        .D(\s_dataOut[13]_i_1_n_0 ),
         .Q(m00_axis_tdata[13]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[14] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[14]),
+        .D(s_cypher[14]),
         .Q(m00_axis_tdata[14]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[15] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[15]),
+        .D(\s_dataOut[15]_i_1_n_0 ),
         .Q(m00_axis_tdata[15]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[16] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[16]),
+        .D(s_ciphered_text00_out[0]),
         .Q(m00_axis_tdata[16]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[17] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[17]),
+        .D(s_ciphered_text00_out[1]),
         .Q(m00_axis_tdata[17]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[18] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[18]),
+        .D(s00_axis_tdata[18]),
         .Q(m00_axis_tdata[18]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[19] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[19]),
+        .D(s_ciphered_text00_out[3]),
         .Q(m00_axis_tdata[19]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[1] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[1]),
+        .D(\s_dataOut[1]_i_1_n_0 ),
         .Q(m00_axis_tdata[1]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[20] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[20]),
+        .D(s00_axis_tdata[20]),
         .Q(m00_axis_tdata[20]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[21] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[21]),
+        .D(s_ciphered_text00_out[5]),
         .Q(m00_axis_tdata[21]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[22] 
@@ -261,19 +332,19 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
   FDRE \s_dataOut_reg[23] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[23]),
+        .D(s_ciphered_text00_out[7]),
         .Q(m00_axis_tdata[23]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[24] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[24]),
+        .D(s_ciphered_text00_out[8]),
         .Q(m00_axis_tdata[24]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[25] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[25]),
+        .D(s_ciphered_text00_out[9]),
         .Q(m00_axis_tdata[25]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[26] 
@@ -285,7 +356,7 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
   FDRE \s_dataOut_reg[27] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[27]),
+        .D(s_ciphered_text00_out[11]),
         .Q(m00_axis_tdata[27]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[28] 
@@ -297,7 +368,7 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
   FDRE \s_dataOut_reg[29] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[29]),
+        .D(s_ciphered_text00_out[13]),
         .Q(m00_axis_tdata[29]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[2] 
@@ -315,13 +386,13 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
   FDRE \s_dataOut_reg[31] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[31]),
+        .D(s_ciphered_text00_out[15]),
         .Q(m00_axis_tdata[31]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[3] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[3]),
+        .D(\s_dataOut[3]_i_1_n_0 ),
         .Q(m00_axis_tdata[3]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[4] 
@@ -333,31 +404,31 @@ module mb_design_CustomECBEncoder_0_0_CustomECBEncoder_v1_0_S00_AXIS
   FDRE \s_dataOut_reg[5] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[5]),
+        .D(\s_dataOut[5]_i_1_n_0 ),
         .Q(m00_axis_tdata[5]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[6] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[6]),
+        .D(s_cypher[6]),
         .Q(m00_axis_tdata[6]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[7] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[7]),
+        .D(\s_dataOut[7]_i_1_n_0 ),
         .Q(m00_axis_tdata[7]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[8] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s00_axis_tdata[8]),
+        .D(\s_dataOut[8]_i_1_n_0 ),
         .Q(m00_axis_tdata[8]),
         .R(p_0_in));
   FDRE \s_dataOut_reg[9] 
        (.C(s00_axis_aclk),
         .CE(s_validOut),
-        .D(s_cypher[9]),
+        .D(\s_dataOut[9]_i_1_n_0 ),
         .Q(m00_axis_tdata[9]),
         .R(p_0_in));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
@@ -379,74 +450,100 @@ endmodule
 
 (* ORIG_REF_NAME = "ECBEncoder" *) 
 module mb_design_CustomECBEncoder_0_0_ECBEncoder
-   (s_ciphered_text,
+   (ciphered_text,
     s00_axis_tdata);
-  output [11:0]s_ciphered_text;
-  input [11:0]s00_axis_tdata;
+  output [15:0]ciphered_text;
+  input [21:0]s00_axis_tdata;
 
-  wire [11:0]s00_axis_tdata;
-  wire [11:0]s_ciphered_text;
+  wire [15:0]ciphered_text;
+  wire [21:0]s00_axis_tdata;
 
-  LUT1 #(
-    .INIT(2'h1)) 
-    \s_dataOut[11]_i_1 
+  LUT2 #(
+    .INIT(4'h6)) 
+    \s_dataOut[10]_i_1 
+       (.I0(s00_axis_tdata[3]),
+        .I1(s00_axis_tdata[16]),
+        .O(ciphered_text[3]));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \s_dataOut[12]_i_1 
+       (.I0(s00_axis_tdata[4]),
+        .I1(s00_axis_tdata[18]),
+        .O(ciphered_text[4]));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \s_dataOut[14]_i_1 
        (.I0(s00_axis_tdata[5]),
-        .O(s_ciphered_text[5]));
+        .I1(s00_axis_tdata[20]),
+        .O(ciphered_text[5]));
   LUT1 #(
     .INIT(2'h1)) 
-    \s_dataOut[18]_i_1 
+    \s_dataOut[16]_i_1 
        (.I0(s00_axis_tdata[6]),
-        .O(s_ciphered_text[6]));
+        .O(ciphered_text[6]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \s_dataOut[17]_i_1 
+       (.I0(s00_axis_tdata[7]),
+        .O(ciphered_text[7]));
   LUT1 #(
     .INIT(2'h1)) 
     \s_dataOut[19]_i_1 
-       (.I0(s00_axis_tdata[7]),
-        .O(s_ciphered_text[7]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \s_dataOut[20]_i_1 
-       (.I0(s00_axis_tdata[8]),
-        .O(s_ciphered_text[8]));
+       (.I0(s00_axis_tdata[9]),
+        .O(ciphered_text[8]));
   LUT1 #(
     .INIT(2'h1)) 
     \s_dataOut[21]_i_1 
-       (.I0(s00_axis_tdata[9]),
-        .O(s_ciphered_text[9]));
+       (.I0(s00_axis_tdata[11]),
+        .O(ciphered_text[9]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \s_dataOut[23]_i_1 
+       (.I0(s00_axis_tdata[13]),
+        .O(ciphered_text[10]));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \s_dataOut[24]_i_1 
+       (.I0(s00_axis_tdata[14]),
+        .O(ciphered_text[11]));
   LUT1 #(
     .INIT(2'h1)) 
     \s_dataOut[25]_i_1 
-       (.I0(s00_axis_tdata[10]),
-        .O(s_ciphered_text[10]));
+       (.I0(s00_axis_tdata[15]),
+        .O(ciphered_text[12]));
   LUT1 #(
     .INIT(2'h1)) 
     \s_dataOut[27]_i_1 
-       (.I0(s00_axis_tdata[11]),
-        .O(s_ciphered_text[11]));
+       (.I0(s00_axis_tdata[17]),
+        .O(ciphered_text[13]));
   LUT1 #(
     .INIT(2'h1)) 
+    \s_dataOut[29]_i_1 
+       (.I0(s00_axis_tdata[19]),
+        .O(ciphered_text[14]));
+  LUT2 #(
+    .INIT(4'h6)) 
     \s_dataOut[2]_i_1 
        (.I0(s00_axis_tdata[0]),
-        .O(s_ciphered_text[0]));
+        .I1(s00_axis_tdata[8]),
+        .O(ciphered_text[0]));
   LUT1 #(
     .INIT(2'h1)) 
-    \s_dataOut[3]_i_1 
-       (.I0(s00_axis_tdata[1]),
-        .O(s_ciphered_text[1]));
-  LUT1 #(
-    .INIT(2'h1)) 
+    \s_dataOut[31]_i_3 
+       (.I0(s00_axis_tdata[21]),
+        .O(ciphered_text[15]));
+  LUT2 #(
+    .INIT(4'h6)) 
     \s_dataOut[4]_i_1 
+       (.I0(s00_axis_tdata[1]),
+        .I1(s00_axis_tdata[10]),
+        .O(ciphered_text[1]));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \s_dataOut[6]_i_1 
        (.I0(s00_axis_tdata[2]),
-        .O(s_ciphered_text[2]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \s_dataOut[5]_i_1 
-       (.I0(s00_axis_tdata[3]),
-        .O(s_ciphered_text[3]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \s_dataOut[9]_i_1 
-       (.I0(s00_axis_tdata[4]),
-        .O(s_ciphered_text[4]));
+        .I1(s00_axis_tdata[12]),
+        .O(ciphered_text[2]));
 endmodule
 `ifndef GLBL
 `define GLBL

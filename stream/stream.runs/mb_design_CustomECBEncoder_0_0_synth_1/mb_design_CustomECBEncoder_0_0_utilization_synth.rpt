@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Jul  8 23:12:28 2020
+| Date         : Fri Jul 10 22:21:47 2020
 | Host         : LAPTOP-KJ99TN5H running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mb_design_CustomECBEncoder_0_0_utilization_synth.rpt -pb mb_design_CustomECBEncoder_0_0_utilization_synth.pb
 | Design       : mb_design_CustomECBEncoder_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   15 |     0 |     63400 |  0.02 |
-|   LUT as Logic          |   15 |     0 |     63400 |  0.02 |
+| Slice LUTs*             |   29 |     0 |     63400 |  0.05 |
+|   LUT as Logic          |   29 |     0 |     63400 |  0.05 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |   33 |     0 |    126800 |  0.03 |
 |   Register as Flip Flop |   33 |     0 |    126800 |  0.03 |
@@ -147,10 +147,10 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   33 |        Flop & Latch |
-| LUT1     |   13 |                 LUT |
+| LUT2     |   17 |                 LUT |
+| LUT1     |   11 |                 LUT |
 | LUT4     |    1 |                 LUT |
 | LUT3     |    1 |                 LUT |
-| LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

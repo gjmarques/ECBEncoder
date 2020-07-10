@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul  8 16:42:59 2020
+# Process ID: 8840
+# Current directory: D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14740 D:\Files\ECBEncoder\ECBEncoder\sim\simECBEncoder\simECBEncoder.xpr
+# Log file: D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/vivado.log
+# Journal file: D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ECB_tb2.tcl
+close_sim
+launch_simulation
+source ECB_tb2.tcl
+create_peripheral xilinx.com user Custom_ECBEncode 1.0 -dir D:/Files/ECBEncoder/ECBEncoder/ip_repo
+add_peripheral_interface M00_AXIS -interface_mode master -axi_type stream [ipx::find_open_core xilinx.com:user:Custom_ECBEncode:1.0]
+add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core xilinx.com:user:Custom_ECBEncode:1.0]
+generate_peripheral [ipx::find_open_core xilinx.com:user:Custom_ECBEncode:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:Custom_ECBEncode:1.0]
+set_property  ip_repo_paths  D:/Files/ECBEncoder/ECBEncoder/ip_repo/Custom_ECBEncode_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_Custom_ECBEncode_v1_0 -directory D:/Files/ECBEncoder/ECBEncoder/ip_repo d:/Files/ECBEncoder/ECBEncoder/ip_repo/Custom_ECBEncode_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+close_sim

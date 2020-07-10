@@ -57,27 +57,19 @@ typedef int bool;
 
 #define min(a, b)	((a < b) ? a : b)
 
-#define N	4000
+#define N	2000
 
 void PopulationCountSw(int* pDst, int* pSrc, unsigned int size)
 {
 	int* p;
-
-	for (p = pSrc; p < pSrc + size; p++, pDst++)
+	int i = 0;
+	unsigned int key = 0xABAB;
+	for (p = pSrc; p < pSrc + size;i++, p++, pDst++)
 	{
+		int b1 = (*p & 0xFFFF0000) >> 16;
+		int b0 = (*p & 0x0000FFFF);
 
-
-		for(int i = 31; i>=0; i--){
-			int a = (*p >> i) & 1;
-			*pDst = (*p);
-			if(a!=0 ){
-
-				*pDst ^= 1UL << i;
-				*pDst ^= 1UL << i-2;
-				*pDst ^= 1UL << i-3;
-
-			}
-		}
+		*pDst = ((b1^key)<<16) | ((b1^b0)^key);
 	}
 }
 
@@ -143,13 +135,14 @@ int main()
     for (int i = 0; i < N; i++)
     {
     	srcData[i] = rand();
-		srcData[i] &= ~0x7;
     }
 
+    xil_printf("\n\rWUT\n\r");
 	for (int i = 0; i < N; i++)
     {
     	dstData[i] = 0;
     }
+    xil_printf("\n\rWUT\n\r");
     timeElapsed = StopAndGetPerformanceTimer();
     xil_printf("\n\rArray initialization time: %d microseconds\n\r",
     		   timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
