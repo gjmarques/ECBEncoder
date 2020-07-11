@@ -1,0 +1,158 @@
+23:38:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Files\ECBEncoder\ECBEncoder\dma_sof\temp_xsdb_launch_script.tcl
+23:38:46 INFO  : XSCT server has started successfully.
+23:38:46 INFO  : Registering command handlers for Vitis TCF services
+23:38:46 INFO  : Successfully done setting XSCT server connection channel  
+23:38:46 INFO  : plnx-install-location is set to ''
+23:38:46 INFO  : Successfully done setting workspace for the tool. 
+23:38:46 INFO  : Successfully done query RDI_DATADIR 
+23:41:03 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Files\ECBEncoder\ECBEncoder\dma_sof\temp_xsdb_launch_script.tcl
+23:41:06 INFO  : XSCT server has started successfully.
+23:41:07 INFO  : Successfully done setting XSCT server connection channel  
+23:41:07 INFO  : plnx-install-location is set to ''
+23:41:07 INFO  : Successfully done query RDI_DATADIR 
+23:41:07 INFO  : Successfully done setting workspace for the tool. 
+23:41:07 INFO  : Registering command handlers for Vitis TCF services
+00:04:35 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:05:18 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:05:59 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:06:33 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:07:03 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:07:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:07:48 INFO  : Jtag cable 'Digilent Nexys4 210274675347A' is selected.
+00:07:48 INFO  : 'jtag frequency' command is executed.
+00:07:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0' command is executed.
+00:07:51 INFO  : FPGA configured successfully with bitstream "D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit"
+00:07:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:07:52 INFO  : Context for processor 'microblaze_0' is selected.
+00:07:52 INFO  : System reset is completed.
+00:07:55 INFO  : 'after 3000' command is executed.
+00:07:55 INFO  : Context for processor 'microblaze_0' is selected.
+00:07:55 INFO  : The application 'D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf' is downloaded to processor 'microblaze_0'.
+00:07:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0
+fpga -file D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf
+----------------End of Script----------------
+
+00:07:55 INFO  : Memory regions updated for context PA
+00:07:55 INFO  : Memory regions updated for context PA
+00:07:55 INFO  : Context for processor 'microblaze_0' is selected.
+00:07:55 INFO  : 'con' command is executed.
+00:07:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:07:55 INFO  : Launch script is exported to file 'D:\Files\ECBEncoder\ECBEncoder\dma_sof\.sdk\launch_scripts\single_application_debug\systemdebugger_dma_sof_system_standalone.tcl'
+00:08:38 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:08:49 INFO  : Disconnected from the channel tcfchan#2.
+00:08:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:08:49 INFO  : Jtag cable 'Digilent Nexys4 210274675347A' is selected.
+00:08:49 INFO  : 'jtag frequency' command is executed.
+00:08:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0' command is executed.
+00:08:51 INFO  : FPGA configured successfully with bitstream "D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit"
+00:08:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:08:51 INFO  : Context for processor 'microblaze_0' is selected.
+00:08:51 INFO  : System reset is completed.
+00:08:54 INFO  : 'after 3000' command is executed.
+00:08:54 INFO  : Context for processor 'microblaze_0' is selected.
+00:08:54 INFO  : The application 'D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf' is downloaded to processor 'microblaze_0'.
+00:08:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0
+fpga -file D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf
+----------------End of Script----------------
+
+00:08:54 INFO  : Memory regions updated for context PA
+00:08:54 INFO  : Memory regions updated for context PA
+00:08:54 INFO  : Context for processor 'microblaze_0' is selected.
+00:08:54 INFO  : 'con' command is executed.
+00:08:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:08:54 INFO  : Launch script is exported to file 'D:\Files\ECBEncoder\ECBEncoder\dma_sof\.sdk\launch_scripts\single_application_debug\systemdebugger_dma_sof_system_standalone.tcl'
+00:09:57 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:10:03 INFO  : Disconnected from the channel tcfchan#3.
+00:10:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:10:04 INFO  : Jtag cable 'Digilent Nexys4 210274675347A' is selected.
+00:10:04 INFO  : 'jtag frequency' command is executed.
+00:10:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0' command is executed.
+00:10:06 INFO  : FPGA configured successfully with bitstream "D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit"
+00:10:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:10:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:06 INFO  : System reset is completed.
+00:10:09 INFO  : 'after 3000' command is executed.
+00:10:09 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:10 INFO  : The application 'D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf' is downloaded to processor 'microblaze_0'.
+00:10:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0
+fpga -file D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf
+----------------End of Script----------------
+
+00:10:10 INFO  : Memory regions updated for context PA
+00:10:10 INFO  : Memory regions updated for context PA
+00:10:10 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:10 INFO  : 'con' command is executed.
+00:10:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:10:10 INFO  : Launch script is exported to file 'D:\Files\ECBEncoder\ECBEncoder\dma_sof\.sdk\launch_scripts\single_application_debug\debugger_dma_sof-default.tcl'
+00:10:43 INFO  : Checking for BSP changes to sync application flags for project 'dma_sof'...
+00:10:50 INFO  : Disconnected from the channel tcfchan#4.
+00:10:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:10:51 INFO  : Jtag cable 'Digilent Nexys4 210274675347A' is selected.
+00:10:51 INFO  : 'jtag frequency' command is executed.
+00:10:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0' command is executed.
+00:10:54 INFO  : FPGA configured successfully with bitstream "D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit"
+00:10:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:10:54 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:54 INFO  : System reset is completed.
+00:10:57 INFO  : 'after 3000' command is executed.
+00:10:57 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:57 INFO  : The application 'D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf' is downloaded to processor 'microblaze_0'.
+00:10:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274675347A" && level==0} -index 0
+fpga -file D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/Files/ECBEncoder/ECBEncoder/dma_sof/dma_sof/Debug/dma_sof.elf
+----------------End of Script----------------
+
+00:10:57 INFO  : Memory regions updated for context PA
+00:10:57 INFO  : Memory regions updated for context PA
+00:10:57 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:57 INFO  : 'con' command is executed.
+00:10:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+00:10:57 INFO  : Launch script is exported to file 'D:\Files\ECBEncoder\ECBEncoder\dma_sof\.sdk\launch_scripts\single_application_debug\debugger_dma_sof-default.tcl'
+00:12:34 INFO  : Disconnected from the channel tcfchan#5.

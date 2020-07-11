@@ -1,0 +1,21 @@
+00:10:43 **** Incremental Build of configuration Debug for project dma_sof ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Files/ECBEncoder/ECBEncoder/dma_sof/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_sof.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Files/ECBEncoder/ECBEncoder/dma_sof/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "dma_sof.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_sof.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size dma_sof.elf  |tee "dma_sof.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19436	   1836	  49256	  70528	  11380	dma_sof.elf
+'Finished building: dma_sof.elf.size'
+' '
+
+00:10:43 Build Finished (took 670ms)
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Sun Jul 12 00:12:36 2020
+# Process ID: 12688
+# Current directory: D:/Files/ECBEncoder/ECBEncoder/dma_sof/webtalk
+# Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
+# Log file: D:/Files/ECBEncoder/ECBEncoder/dma_sof/webtalk/webtalk.log
+# Journal file: D:/Files/ECBEncoder/ECBEncoder/dma_sof/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl
