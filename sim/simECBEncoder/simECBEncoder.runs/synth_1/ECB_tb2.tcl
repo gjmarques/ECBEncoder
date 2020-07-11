@@ -17,21 +17,22 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/CR/ECBEncoder/sim/simECBEncoder/simECBEncoder.cache/wt [current_project]
-set_property parent.project_path C:/CR/ECBEncoder/sim/simECBEncoder/simECBEncoder.xpr [current_project]
+set_property webtalk.parent_dir D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.cache/wt [current_project]
+set_property parent.project_path D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/CR/ECBEncoder/sim/simECBEncoder/simECBEncoder.cache/ip [current_project]
+set_property ip_repo_paths d:/Files/ECBEncoder/ECBEncoder/ip_repo/Custom_ECBEncode_1.0 [current_project]
+update_ip_catalog
+set_property ip_output_repo d:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/CR/ECBEncoder/sim/simECBEncoder/simECBEncoder.srcs/sources_1/new/ECBEncoder.vhd
-  C:/CR/ECBEncoder/sim/simECBEncoder/simECBEncoder.srcs/sources_1/new/ECB_tb2.vhd
+  D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.srcs/sources_1/new/ECBEncoder.vhd
+  D:/Files/ECBEncoder/ECBEncoder/sim/simECBEncoder/simECBEncoder.srcs/sources_1/new/ECB_tb2.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

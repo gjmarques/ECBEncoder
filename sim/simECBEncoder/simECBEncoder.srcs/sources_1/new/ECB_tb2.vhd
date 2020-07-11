@@ -37,7 +37,7 @@ end ECB_tb2;
 
 architecture Behavioral of ECB_tb2 is
 signal s_key : std_logic_vector(15 downto 0); 
-signal s_texto , s_plain_text , s_ciphered_text : std_logic_vector(31 downto 0);
+signal s_data_in , s_plain_text , s_ciphered_text : std_logic_vector(31 downto 0);
 
 
 begin
@@ -45,18 +45,18 @@ begin
   
    ecb : entity work.ECBEncoder(Behavioral)
            port map( key =>s_key, 
-                     texto => s_texto,
+                     data_in => s_data_in,
                      plain_text => s_plain_text,
                      ciphered_text => s_ciphered_text
                     );
                     
    process
    begin
-    s_texto <= x"BD01427E";
-    s_key <= x"BAAB";
+    s_data_in <= x"BD01427E";
+    s_key <= x"ABAB";
     wait for 250 ns;
-    s_texto <= x"BA13EA56";
-    s_key <= x"BAAB";
+    s_data_in <= x"BA13EA56";
+    s_key <= x"ABAB";
     wait for 250 ns;
    end process;
 

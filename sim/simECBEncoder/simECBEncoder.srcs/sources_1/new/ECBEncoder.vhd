@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ECBEncoder is
     port(key : in std_logic_vector(15 downto 0);
          data_in : in std_logic_vector(31 downto 0);
+         plain_text : out std_logic_vector(31 downto 0);
          ciphered_text : out std_logic_vector(31 downto 0)
     );
     
@@ -41,7 +42,7 @@ end ECBEncoder;
 
 architecture Behavioral of ECBEncoder is
 signal s_block0, s_block1 : std_logic_vector(15 downto 0);
-signal s_ciphered_text  : std_logic_vector(31 downto 0);
+signal s_plain_text, s_ciphered_text  : std_logic_vector(31 downto 0);
 begin
 
 s_block0 <= data_in(31 downto 16);
@@ -50,6 +51,8 @@ s_block1 <= data_in(15 downto 0);
 s_ciphered_text(31 downto 16) <= (s_block0 xor key);
 s_ciphered_text(15 downto 0) <= (s_block1 xor key xor s_block0);
 
+s_plain_text(31 downto 16) <= (s_ciphered_text(31 downto 16) xor key);
+s_plain_text(15 downto 0) <= (s_ciphered_text(15 downto 0) xor key xor (s_ciphered_text(31 downto 16) xor key));
 ciphered_text <= s_ciphered_text;
-
+plain_text <= s_plain_text;
 end Behavioral;
